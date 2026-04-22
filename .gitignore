@@ -1,12 +1,24 @@
-# Flutter / Android
-Frontend/android/.gradle/
-Frontend/android/app/build/
-Frontend/build/
-
 # Python
 __pycache__/
 *.pyc
 .venv/
 
+# Flutter
+Frontend/.dart_tool/
+Frontend/build/
+Frontend/.flutter-plugins
+Frontend/.flutter-plugins-dependencies
+
+# Android
+Frontend/android/.gradle/
+Frontend/android/app/build/
+
+# iOS
+Frontend/ios/Pods/
+
 # VS Code
 .vscode/
+
+# OS
+.DS_Store
+Thumbs.db
