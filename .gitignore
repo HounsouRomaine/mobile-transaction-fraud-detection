@@ -1,0 +1,12 @@
+# Flutter / Android
+Frontend/android/.gradle/
+Frontend/android/app/build/
+Frontend/build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# VS Code
+.vscode/

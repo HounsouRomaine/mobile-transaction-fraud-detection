@@ -1,0 +1,22 @@
+name: platform_channel
+
+environment:
+  sdk: ^3.9.0-0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: any
+
+flutter:
+  uses-material-design: true
+
+# PUBSPEC CHECKSUM: f9g2jl
