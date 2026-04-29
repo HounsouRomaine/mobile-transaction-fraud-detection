@@ -1,14 +1,14 @@
-liste_noire = ["97000000", "96000000", "95000000"]
+from database.db import get_connection
 
-def analyser_numero(numero: str) -> dict:
+def log(numero, resultat, score):
 
-    if numero in liste_noire:
-        return {
-            "suspect": True,
-            "raison": "Numéro déjà signalé"
-        }
+    conn = get_connection()
+    cursor = conn.cursor()
 
-    return {
-        "suspect": False,
-        "raison": "Aucun problème détecté"
-    }
+    cursor.execute("""
+    INSERT INTO logs (numero, resultat, score)
+    VALUES (?, ?, ?)
+    """, (numero, resultat, score))
+
+    conn.commit()
+    conn.close()
